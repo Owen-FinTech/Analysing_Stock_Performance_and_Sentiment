@@ -73,7 +73,7 @@ st.write(fig)
 st.write("""Comparing scatter plots on each kind of twitter engagement, we can 
 see that it is difficult to confirm there is a very strong correlation on the positive 
 price movement from the volume of twitter engagement. In contrast, negative 
-price movement is strongly correlated to the volume of tweeter engagement.""")
+price movement is strongly correlated to the volume of twitter engagement.""")
 
 
 
