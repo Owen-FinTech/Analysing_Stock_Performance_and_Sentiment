@@ -14,10 +14,10 @@ st.markdown("# Comparing Timeframes Part 1")
 
 # Creating text:
 
-st.write("""For this section of the project, we have created 
+st.write("""For this section of the project, I have created 
 visualisations in order to see how the correlations 
 between sentiment change and price change differ when data is 
-collected for different lengths of time. We requested data from 
+collected for different lengths of time. I requested data from 
 the API on 24hr, 72hr, 1 week, 2 week, 1 month and 3 month 
 timeframes for both of the top 200 most bullish tickers 
 (ordered by positive change in sentiment) and 
@@ -628,6 +628,26 @@ bearish_combined = (first_quartile_bearish * second_quartile_bearish *
 st.bokeh_chart(hv.render(bullish_combined))
 
 st.bokeh_chart(hv.render(bearish_combined))
+
+st.write("""Conclusions are not easy to make from these two plots unfortunately.
+ There clearly is a lot of divergence between the different quartiles. There is
+  no easily discernable trend in the different correlations according to 
+  timeframe on these plots. One observation we can make though is that the top 
+  quartile of the of the top 200 tickers according to change in sentiment does 
+  not consistently have a higher correlation than the lower quartiles. 
+
+This leads me to hypothesize that tickers that have the most change in 
+sentiment are not necessarily very reliable points of data. Upon examining the 
+dataframe I found some huge changes in sentiment, this might be happening for 
+more obscure tickers where a miniscule amount of tweets (or most likely, a 
+single tweet) will create these big swings in the sentiment score averages. 
+As a way to counteract this, I decided I would filter the top 200 tickers by 
+change in sentiment to only include those that also appear in the top 200 
+highest trending tickers. It follows that if a ticker is on the trending list, 
+it won't have a tiny amount of tweets.
+
+So, for part 2 of my analysis I modified my scripts to filter out the 
+non-trending tickers.""")
 
 
 
