@@ -14,10 +14,10 @@ st.markdown("# Comparing Timeframes Part 2")
 
 # Creating text:
 
-st.write("""For this second part we are visualising
-the same 24hr, 72hr, 1 week, 2 week, 1 month and 3 month timeframes 
-but instead of dividing the tickers into quartiles, we filtered out 
-the non-trending tickers.""")
+st.write("""For this second part I will be examining 
+the same  24hr, 72hr, 1 week, 2 week, 1 month and 3 month 
+timeframes but instead of dividing the tickers into quartiles 
+I will be filtering out the non-trending tickers.""")
 
 # Accessing the csv and reading it into the dataframe:
 
@@ -334,6 +334,12 @@ combined_sentiment_and_trending_plot = (bullish_sentiment_and_trending_plot *
 # Plotting to streamlit dashboard:
 
 st.bokeh_chart(hv.render(combined_sentiment_and_trending_plot))
+
+st.write("""This plot provides greater opportunity to draw conclusions 
+than the busy plots created in part 1. We can see that for all the 
+different timeframes plotted, bearish sentiment had a higher correlation 
+than bullish sentiment. We can see this peaking at the 2 weeks timeframe, 
+so that would be the optimal span of time for sentiment data collection.""")
 
 
 
