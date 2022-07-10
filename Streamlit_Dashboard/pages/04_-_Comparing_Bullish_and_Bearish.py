@@ -10,7 +10,7 @@ import hvplot.pandas
 from pathlib import Path
 
 # Reading the bullish_trending csv file from local directory 
-bullish_trending_df = pd.read_csv(Path('../Bullish_Bearish_Resources/bullish_trending_df.csv'))
+bullish_trending_df = pd.read_csv(Path('/app/project_1/Bullish_Bearish_Resources/bullish_trending_df.csv'))
 
 #Dropping the unrelated columns
 bullish_trending_df = bullish_trending_df.drop(columns =['Unnamed: 0','rank','price','change','volume','previousVolume',
@@ -59,7 +59,7 @@ bullish_trending_corr = bullish_trending_df.corr()
 # bullish_trending_heatmap = sns.heatmap(bullish_trending_corr, vmin=-1, vmax=1, cmap='PuOr', annot = True)
 
 # Reading the bearish_trending csv file from local directory 
-bearish_trending_df = pd.read_csv(Path('../Bullish_Bearish_Resources/bearish_trending_df.csv'))
+bearish_trending_df = pd.read_csv(Path('/app/project_1/Bullish_Bearish_Resources/bearish_trending_df.csv'))
 
 #Dropping columns 
 

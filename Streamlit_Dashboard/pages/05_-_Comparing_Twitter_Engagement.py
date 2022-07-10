@@ -22,7 +22,7 @@ and retweets with the changes in the price of the top 200 trending
 tickers.""")
 
 # subtracting CSV file from desktop through jupyter notebook
-csvpath = Path("../Engagement_Resources/Tweeter Engagement Data.csv")
+csvpath = Path("/app/project_1/Engagement_Resources/Tweeter Engagement Data.csv")
 tweeter_df = pd.read_csv(csvpath)
 
 # dropping extra columns that are irrelevant to our analysis

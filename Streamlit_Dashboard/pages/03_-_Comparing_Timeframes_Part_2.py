@@ -21,7 +21,7 @@ I will be filtering out the non-trending tickers.""")
 
 # Accessing the csv and reading it into the dataframe:
 
-tickers_data = Path('../Timeframes_Resources/tickers.csv')
+tickers_data = Path('/app/project_1/Timeframes_Resources/tickers.csv')
 dataframe_tickers = pd.read_csv(tickers_data)
 
 # Setting index as "ticker":
@@ -30,7 +30,7 @@ dataframe_tickers = dataframe_tickers.set_index("ticker")
 
 # Accessing the csv and reading it into the dataframe:
 
-bull_24h_data = Path('../Timeframes_Resources/bull_24h.csv')
+bull_24h_data = Path('./app/project_1/Timeframes_Resources/bull_24h.csv')
 dataframe_bull_24h = pd.read_csv(bull_24h_data)
 
 # Setting index as "ticker":
@@ -51,7 +51,7 @@ corr_bull_24h_trend = correlation_matrix_bull_24h_trend["price change percent"][
 
 # Accessing the csv and reading it into the dataframe:
 
-bull_72h_data = Path('../Timeframes_Resources/bull_72h.csv')
+bull_72h_data = Path('./app/project_1/Timeframes_Resources/bull_72h.csv')
 dataframe_bull_72h = pd.read_csv(bull_72h_data)
 
 # Setting index as "ticker":
@@ -72,7 +72,7 @@ corr_bull_72h_trend = correlation_matrix_bull_72h_trend["price change percent"][
 
 # Accessing the csv and reading it into the dataframe:
 
-bull_1w_data = Path('../Timeframes_Resources/bull_1w.csv')
+bull_1w_data = Path('/app/project_1/Timeframes_Resources/bull_1w.csv')
 dataframe_bull_1w = pd.read_csv(bull_1w_data)
 
 # Setting index as "ticker":
@@ -93,7 +93,7 @@ corr_bull_1w_trend = correlation_matrix_bull_1w_trend["price change percent"][0]
 
 # Accessing the csv and reading it into the dataframe:
 
-bull_2w_data = Path('../Timeframes_Resources/bull_2w.csv')
+bull_2w_data = Path('/app/project_1/Timeframes_Resources/bull_2w.csv')
 dataframe_bull_2w = pd.read_csv(bull_2w_data)
 
 # Setting index as "ticker":
@@ -114,7 +114,7 @@ corr_bull_2w_trend = correlation_matrix_bull_2w_trend["price change percent"][0]
 
 # Accessing the csv and reading it into the dataframe:
 
-bull_1m_data = Path('../Timeframes_Resources/bull_1m.csv')
+bull_1m_data = Path('/app/project_1/Timeframes_Resources/bull_1m.csv')
 dataframe_bull_1m = pd.read_csv(bull_1m_data)
 
 # Setting index as "ticker":
@@ -135,7 +135,7 @@ corr_bull_1m_trend = correlation_matrix_bull_1m_trend["price change percent"][0]
 
 # Accessing the csv and reading it into the dataframe:
 
-bull_3m_data = Path('../Timeframes_Resources/bull_3m.csv')
+bull_3m_data = Path('/app/project_1/Timeframes_Resources/bull_3m.csv')
 dataframe_bull_3m = pd.read_csv(bull_3m_data)
 
 # Setting index as "ticker":
@@ -156,7 +156,7 @@ corr_bull_3m_trend = correlation_matrix_bull_3m_trend["price change percent"][0]
 
 # Accessing the csv and reading it into the dataframe:
 
-bear_24h_data = Path('../Timeframes_Resources/bear_24h.csv')
+bear_24h_data = Path('/app/project_1/Timeframes_Resources/bear_24h.csv')
 dataframe_bear_24h = pd.read_csv(bear_24h_data)
 
 # Setting index as "ticker":
@@ -177,7 +177,7 @@ corr_bear_24h_trend = correlation_matrix_bear_24h_trend["price change percent"][
 
 # Accessing the csv and reading it into the dataframe:
 
-bear_72h_data = Path('../Timeframes_Resources/bear_72h.csv')
+bear_72h_data = Path('./app/project_1/Timeframes_Resources/bear_72h.csv')
 dataframe_bear_72h = pd.read_csv(bear_72h_data)
 
 # Setting index as "ticker":
@@ -198,7 +198,7 @@ corr_bear_72h_trend = correlation_matrix_bear_72h_trend["price change percent"][
 
 # Accessing the csv and reading it into the dataframe:
 
-bear_1w_data = Path('../Timeframes_Resources/bear_1w.csv')
+bear_1w_data = Path('/app/project_1/Timeframes_Resources/bear_1w.csv')
 dataframe_bear_1w = pd.read_csv(bear_1w_data)
 
 # Setting index as "ticker":
@@ -219,7 +219,7 @@ corr_bear_1w_trend = correlation_matrix_bear_1w_trend["price change percent"][0]
 
 # Accessing the csv and reading it into the dataframe:
 
-bear_2w_data = Path('../Timeframes_Resources/bear_2w.csv')
+bear_2w_data = Path('/app/project_1/Timeframes_Resources/bear_2w.csv')
 dataframe_bear_2w = pd.read_csv(bear_2w_data)
 
 # Setting index as "ticker":
@@ -240,7 +240,7 @@ corr_bear_2w_trend = correlation_matrix_bear_2w_trend["price change percent"][0]
 
 # Accessing the csv and reading it into the dataframe:
 
-bear_1m_data = Path('../Timeframes_Resources/bear_1m.csv')
+bear_1m_data = Path('/app/project_1/Timeframes_Resources/bear_1m.csv')
 dataframe_bear_1m = pd.read_csv(bear_1m_data)
 
 # Setting index as "ticker":
@@ -261,7 +261,7 @@ corr_bear_1m_trend = correlation_matrix_bear_1m_trend["price change percent"][0]
 
 # Accessing the csv and reading it into the dataframe:
 
-bear_3m_data = Path('../Timeframes_Resources/bear_3m.csv')
+bear_3m_data = Path('/app/project_1/Timeframes_Resources/bear_3m.csv')
 dataframe_bear_3m = pd.read_csv(bear_3m_data)
 
 # Setting index as "ticker":

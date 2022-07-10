@@ -9,7 +9,7 @@ plt.style.use('ggplot')
 from matplotlib.pyplot import figure
 
 #Access data
-bearish_csv_path = Path("../Market_Cap_Resources/market cap in bearish sentiment 72h.csv")
+bearish_csv_path = Path("/app/project_1/Market_Cap_Resources/market cap in bearish sentiment 72h.csv")
 df_bearish = pd.read_csv(bearish_csv_path)
 df_bearish.head()
 df_bearish = df_bearish.set_index("ticker").drop(columns = ["sentiment", "lastSentiment", "price", "rank", "change", "name", "previousClose"])

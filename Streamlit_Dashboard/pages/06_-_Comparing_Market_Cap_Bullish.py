@@ -9,7 +9,7 @@ plt.style.use('ggplot')
 from matplotlib.pyplot import figure
 
 #Access data
-bullish_csv_path = Path("../Market_Cap_Resources/market cap in bullish sentiment 72h.csv")
+bullish_csv_path = Path("/app/project_1/Market_Cap_Resources/market cap in bullish sentiment 72h.csv")
 df_bullish = pd.read_csv(bullish_csv_path)
 df_bullish = df_bullish.set_index("ticker").drop(columns = ["sentiment", "lastSentiment", "price", "rank", "change", "name", "previousClose"])
 df_bullish["volume change"] = (df_bullish["volume"] - df_bullish["previousVolume"])/df_bullish["previousVolume"]
