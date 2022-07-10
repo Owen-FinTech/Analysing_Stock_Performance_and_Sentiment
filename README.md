@@ -1,6 +1,6 @@
 # Project_1: Analysing Stock Performance and Sentiment
 
-![Intro Image](Images/Intro_Image.png "Analysing Stock Performance and Sentiment")
+![Intro Image](Project_Images/Intro_Image.png "Analysing Stock Performance and Sentiment")
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Follow [this link]() to view the project dashboard created with Streamlit.
 
 For this section of the project, I have created visualisations in order to see how the correlations between sentiment change and price change differ when data is collected for different lengths of time. I requested data from the API on 24hr, 72hr, 1 week, 2 week, 1 month and 3 month timeframes for both of the top 200 most bullish tickers (ordered by positive change in sentiment) and the top 200 most bearish tickers (ordered by negative change in sentiment).
 
-![Timeframes_1](Images/Timeframes_1.png)
+![Timeframes_1](Project_Images/Timeframes_1.png)
 
 Conclusions are not easy to make from these two plots unfortunately. There clearly is a lot of divergence between the different quartiles. There is no easily discernable trend in the different correlations according to timeframe on these plots. One observation we can make though is that the top quartile of the of the top 200 tickers according to change in sentiment does not consistently have a higher correlation than the lower quartiles.
 
@@ -44,7 +44,7 @@ So, for part 2 of my analysis I modified my scripts to filter out the non-trendi
 
 For this second part I will be examining the same 24hr, 72hr, 1 week, 2 week, 1 month and 3 month timeframes but instead of dividing the tickers into quartiles I will be filtering out the non-trending tickers.
 
-![Timeframes_2](Images/Timeframes_2.png)
+![Timeframes_2](Project_Images/Timeframes_2.png)
 
 This plot provides greater opportunity to draw conclusions than the busy plots created in part 1. We can see that for all the different timeframes plotted, bearish sentiment had a higher correlation than bullish sentiment. We can see this peaking at the 2 weeks timeframe, so that would be the optimal span of time for sentiment data collection.
 
@@ -52,7 +52,7 @@ This plot provides greater opportunity to draw conclusions than the busy plots c
 
 In this section, we are trying to analyse and plot the top 50 tickers by bullish and bearish sentiments and their correlation with the change in price.
 
-![Bullish_Bearish_1](Images/Bullish_Bearish_1.png)
+![Bullish_Bearish_1](Project_Images/Bullish_Bearish_1.png)
 
 As we can see, in general the change in price is too small in both bullish and bearish sentiment to assume there is an actual correlation. But for comparison purposes the bearish sentiment correlates with more bearish change in price.
 
@@ -60,15 +60,15 @@ As we can see, in general the change in price is too small in both bullish and b
 
 For this section of the project, we have created visualisations to show the correlations between the different kinds of Twitter engagement: posts, likes, impressions (or views) and retweets with the changes in the price of the top 200 trending tickers.
 
-![Twitter_Engagement_1](Images/Twitter_Engagement_1.png)
+![Twitter_Engagement_1](Project_Images/Twitter_Engagement_1.png)
 
-![Twitter_Engagement_2](Images/Twitter_Engagement_2.png)
+![Twitter_Engagement_2](Project_Images/Twitter_Engagement_2.png)
 
-![Twitter_Engagement_3](Images/Twitter_Engagement_3.png)
+![Twitter_Engagement_3](Project_Images/Twitter_Engagement_3.png)
 
-![Twitter_Engagement_4](Images/Twitter_Engagement_4.png)
+![Twitter_Engagement_4](Project_Images/Twitter_Engagement_4.png)
 
-![Twitter_Engagement_5](Images/Twitter_Engagement_5.png)
+![Twitter_Engagement_5](Project_Images/Twitter_Engagement_5.png)
 
 Comparing scatter plots on each kind of twitter engagement, we can see that it is difficult to confirm there is a very strong correlation on the positive price movement from the volume of twitter engagement. In contrast, negative price movement is strongly correlated to the volume of twitter engagement.
 
@@ -78,11 +78,11 @@ Across different size of market capitalizations, we will analyze if there is any
 
 ### Correlation Comparison for Different Market Caps in Bullish Sentiment
 
-![Market_Cap_1](Images/Market_Cap_1.png)
+![Market_Cap_1](Project_Images/Market_Cap_1.png)
 
-![Market_Cap_2](Images/Market_Cap_2.png)
+![Market_Cap_2](Project_Images/Market_Cap_2.png)
 
-![Market_Cap_3](Images/Market_Cap_3.png)
+![Market_Cap_3](Project_Images/Market_Cap_3.png)
 
 ### Findings
 
@@ -92,11 +92,11 @@ Med cap stocks are relatively more sensitive to sentiment changes. In medium cap
 
 ### Correlation Comparison for Different Market Caps in Bearish Sentiment
 
-![Market_Cap_4](Images/Market_Cap_4.png)
+![Market_Cap_4](Project_Images/Market_Cap_4.png)
 
-![Market_Cap_5](Images/Market_Cap_5.png)
+![Market_Cap_5](Project_Images/Market_Cap_5.png)
 
-![Market_Cap_6](Images/Market_Cap_6.png)
+![Market_Cap_6](Project_Images/Market_Cap_6.png)
 
 ### Market Cap Conclusions
 
