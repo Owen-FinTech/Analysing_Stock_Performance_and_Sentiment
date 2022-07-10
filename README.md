@@ -98,7 +98,7 @@ Med cap stocks are relatively more sensitive to sentiment changes. In medium cap
 
 ![Market_Cap_6](Project_Images/Market_Cap_6.png)
 
-### Market Cap Conclusions
+## Market Cap Conclusions
 
 From the marix above, we can find that the large cap has stonger correlation with the negative sentiment change. Price decreased on increasing volume change along with the negative sentiment change. In bullish sentiment analysis, it shows that the large cap had a slight price decrease even with the positive sentiment. It is a clear sign that the investors are now at a high level of pessimism.
 
@@ -108,6 +108,39 @@ To build a portfolio with a proper mix of small-cap, med-cap, and large-cap stoc
 
 However, the correlations with the three markets are all very weak. Analysis of market cap correlation does not suffice as a determining factor in investment strategy. Obviously, it's better to use sentiment analysis when we evaluate a specific stock or industry.
 
+## Analysing 3 blue chip stocks in different industries against media sentiment
+
+For this project, 3 blue chip stocks were analysed over the period of a month. The project was to assessed if sentiment analysis could play a pivotal role in forecasting stock activity. Initially the data was
+
+## Hypothesis
+
+Sentiment from media does not create stock volatility for blue-chip stocks, and should not be used as a driver to predict movements.
+
+## So how did we approach this analysis?
+
+During this section of the analysis, blue-chip stocks were isolated against newsfeed. The newsfeed was source from NewsAPI, where it provided 30-days of searches for free.
+
+VADER Sentiment Analysis was used to analyse the newsfeed. VADER = Valence Aware Dictionary and sEntiment Reasoner is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media, and works well on texts from other domains.
+
+## Apple Inc
+
+![Blue_Chip_1](Project_Images/Blue_Chip_1.png)
+
+## Summary of findings from analysing Apple Inc
+
+There was no correlation in trading volumes and the newsfeed sentiments for Apple. While there was a significant amount of newsfeeds for the period, reaching a count of 17 newsfeed globally on 06 June 2022, the volume of trade days was one of the lowest for the period.
+
+## JP Morgan
+
+Media feeds collected from NewsAPI for the previous 30-days.
+
+![Blue_Chip_2](Project_Images/Blue_Chip_2.png)
+
+## Jones Lang Lasalle
+
+Media feeds collected from NewsAPI for the previous 30-days.
+
+![Blue_Chip_3](Project_Images/Blue_Chip_3.png)
 
 # Conclusions
 
