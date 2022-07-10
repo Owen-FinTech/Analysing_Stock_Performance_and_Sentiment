@@ -1,12 +1,15 @@
 # importing data
 import requests
 import json
-import pandas as pd
-from pathlib import Path
-import seaborn as sns
-import hvplot.pandas
-from pathlib import Path
 import streamlit as st
+from pathlib import Path
+import pandas as pd
+import hvplot.pandas
+import seaborn as sns
+import matplotlib.pyplot as plt
+import matplotlib.mlab as mlab
+plt.style.use('ggplot')
+from matplotlib.pyplot import figure
 
 # Creating a heading:
 
