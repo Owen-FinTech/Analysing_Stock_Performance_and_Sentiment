@@ -7,7 +7,6 @@ import seaborn as sns
 import hvplot.pandas
 from pathlib import Path
 import streamlit as st
-import matplotlib.pyplot as plt
 
 # Creating a heading:
 
