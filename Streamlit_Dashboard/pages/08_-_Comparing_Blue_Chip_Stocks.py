@@ -48,7 +48,7 @@ with apple_inc:
 
     st.subheader('Trade volumes over a 30-day period')
     # Read CSV files and prepare DF for volume
-    Compare_volume_AAPL = Path("../Blue_Chip_Resources/Streamlit/Compare_Vol_AAPL.csv")
+    Compare_volume_AAPL = Path("/app/project_1/Blue_Chip_Resources/Streamlit/Compare_Vol_AAPL.csv")
     Compare_volume_AAPL_df = pd.read_csv(Compare_volume_AAPL)
     Compare_volume_AAPL_df.set_index(pd.to_datetime(Compare_volume_AAPL_df['Date'], infer_datetime_format=True), inplace=True)
     Compare_volume_AAPL_df.drop(columns=['Date'], inplace=True)    
@@ -56,7 +56,7 @@ with apple_inc:
 
     st.subheader('Sentiment Analysis and Newsfeed Count')
     # Access the CSV and rename the columns
-    AAPL_news = Path ('../Blue_Chip_Resources/Streamlit/AAPL.csv')
+    AAPL_news = Path ('/app/project_1/Blue_Chip_Resources/Streamlit/AAPL.csv')
     AAPL_news_df = pd.read_csv(AAPL_news)
     AAPL_news_df1 = AAPL_news_df.rename(columns={'publishedAt': 'Date', 'title': 'Title'})
 
@@ -93,7 +93,7 @@ with jp_morgan:
 
     st.subheader('Trade volumes over a 30-day period')
     # Read CSV files and prepare DF
-    Compare_volume_AMJ = Path("../Blue_Chip_Resources/Streamlit/Compare_Vol_AMJ.csv")
+    Compare_volume_AMJ = Path("/app/project_1/Blue_Chip_Resources/Streamlit/Compare_Vol_AMJ.csv")
     Compare_volume_AMJ_df = pd.read_csv(Compare_volume_AMJ)
     Compare_volume_AMJ_df.set_index(pd.to_datetime(Compare_volume_AMJ_df['Date'], infer_datetime_format=True), inplace=True)
     Compare_volume_AMJ_df.drop(columns=['Date'], inplace=True)    
@@ -101,7 +101,7 @@ with jp_morgan:
 
     st.subheader('Sentiment Analysis and Newsfeed Count')
     # Access the CSV and rename the columns
-    AMJ_news = Path ('../Blue_Chip_Resources/Streamlit/AMJ.csv')
+    AMJ_news = Path ('/app/project_1/Blue_Chip_Resources/Streamlit/AMJ.csv')
     AMJ_news_df = pd.read_csv(AMJ_news)
     AMJ_news_df1 = AMJ_news_df.rename(columns={'publishedAt': 'Date', 'title': 'Title'})
 
@@ -134,7 +134,7 @@ with jll:
 
     st.subheader('Trade volumes over a 30-day period')
     # Read CSV files and prepare DF
-    Compare_volume_JLL = Path("../Blue_Chip_Resources/Streamlit/Compare_Vol_JLL.csv")
+    Compare_volume_JLL = Path("/app/project_1/Blue_Chip_Resources/Streamlit/Compare_Vol_JLL.csv")
     Compare_volume_JLL_df = pd.read_csv(Compare_volume_JLL)
     Compare_volume_JLL_df.set_index(pd.to_datetime(Compare_volume_JLL_df['Date'], infer_datetime_format=True), inplace=True)
     Compare_volume_JLL_df.drop(columns=['Date'], inplace=True)    
@@ -142,7 +142,7 @@ with jll:
 
     st.subheader('Sentiment Analysis and Newsfeed Count')
     # Access the CSV and rename the columns
-    JLL_news = Path ('../Blue_Chip_Resources/Streamlit/JLL.csv')
+    JLL_news = Path ('/app/project_1/Blue_Chip_Resources/Streamlit/JLL.csv')
     JLL_news_df = pd.read_csv(JLL_news)
     JLL_news_df1 = JLL_news_df.rename(columns={'publishedAt': 'Date', 'title': 'Title'})
 
