@@ -4,3 +4,4 @@ seaborn
 hvplot
 numpy
 vaderSentiment
+pathlib
