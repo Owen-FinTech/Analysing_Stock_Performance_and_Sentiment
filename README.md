@@ -126,23 +126,31 @@ VADER Sentiment Analysis was used to analyse the newsfeed. VADER = Valence Aware
 
 ![Blue_Chip_1](Project_Images/Blue_Chip_1.png)
 
-## Summary of findings from analysing Apple Inc
+## Summary of analysis: Apple Inc
 
 There was no correlation in trading volumes and the newsfeed sentiments for Apple. While there was a significant amount of newsfeeds for the period, reaching a count of 17 newsfeed globally on 06 June 2022, the volume of trade days was one of the lowest for the period.
 
 ## JP Morgan
 
-Media feeds collected from NewsAPI for the previous 30-days.
-
 ![Blue_Chip_2](Project_Images/Blue_Chip_2.png)
+
+## Summary of analysis: JP Morgan
+
+There was no correlation in trading volumes and the newsfeed sentiments for JP Morgan. While there was an increase in count on 14 June 2022, which was the highest for the 30-day period, there were minimal sentiment changes. The most significant sentiment change during this period occurred 29 June 2022, where trade volume and value increased with the highest negative sentiment score.
 
 ## Jones Lang Lasalle
 
-Media feeds collected from NewsAPI for the previous 30-days.
-
 ![Blue_Chip_3](Project_Images/Blue_Chip_3.png)
 
-# Conclusions
+## Summary of analysis: Jones Lang Lasalle
+
+There was some correlation in trading volumes and the newsfeed sentiments for Jones Lang Lasalle. For the highest count that occurred on 30 June 2022, there was a significant volume of trade and a drop in value. This was the strongest correlation for sentiment vs impact on markets. However, the largest drop in value for the period coincided with the highest positive sentiment for the period.
+
+## Blue Chip Stocks Conclusions
+
+The short window for analysis provided a small window into the impact sentiment analysis has on the movement of blue-chip stocks in the market. However, it is unfair to assume that there is no correlation to some of the major moves in the market due to sentiment. Research has indicated that investor behaviours are a critical driver in market movement and while it is hard to identify the changes in market due to a single media feed, it provides an excellent tool to flag any potential market movement.
+
+# Project Conclusions
 
 While we did find some small degrees of correlation between sentiment and price movement in some specific subsets of the data, the overall picture we got was that sentiment data couldn’t be consistently relied upon as an indicator of price movement. Therefore, we would not recommend that sentiment analysis be included as part of a trading strategy. One of the main problems is that the small degrees of correlation we found do not amount to causation. In other words, these sentiment scores are just as likely to be a reaction to price movement in the market than they are a predictor of that movement. Furthermore, Twitter users that include stock tickers in their hashtag mentions are a niche within the overall community of Twitter users. So, a tweet commenting on a company in general may contain valuable sentiment but unfortunately it wouldn’t be analysed by a stock sentiment API if it doesn’t also include the company ticker in the hashtag mentions.
 
