@@ -24,7 +24,7 @@ Modules and libraries required to run the Jupyter Notebook files:
 
 Requests, Json, Pandas, Holoviews, Pathlib, Numpy, Seaborn, Matplotlib, and Vader Lexicon.
 
-Follow [this link]() to view the project dashboard created with Streamlit.
+Follow [this link](https://owen-fintech-projec-streamlit-dashboard01---introduction-at4bu7.streamlitapp.com/) to view the project dashboard created with Streamlit.
 
 # Analysis
 
