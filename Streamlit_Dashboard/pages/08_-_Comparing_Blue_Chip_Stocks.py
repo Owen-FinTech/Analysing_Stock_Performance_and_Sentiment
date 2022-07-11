@@ -84,7 +84,7 @@ with apple_inc:
     # Display line chart of the count and mean sentiment
     st.line_chart(AAPL_news_df_grp)
 
-    st.subheader('Summary of findings from analysing Apple Inc')
+    st.subheader('Summary of analysis: Apple Inc')
     st.write('There was no correlation in trading volumes and the newsfeed sentiments for Apple. While there was a significant amount of newsfeeds for the period, reaching a count of 17 newsfeed globally on 06 June 2022, the volume of trade days was one of the lowest for the period.')
 
 with jp_morgan: 
