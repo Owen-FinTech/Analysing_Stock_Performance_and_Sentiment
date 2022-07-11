@@ -28,13 +28,13 @@ hypothesis = st.container()
 apple_inc = st.container()
 jp_morgan = st.container()
 jll = st.container()
-
+conclusion = st.container()
 
 
 
 with header:
     st.title('Analysing 3 blue chip stocks in different industries against media sentiment')
-    st.write('For this project, 3 blue chip stocks were analysed over the period of a month. The project was to assessed if sentiment analysis could play a pivotal role in forecasting stock activity. Initially the data was')
+    st.write('For this project, 3 blue chip stocks were analysed over the period of a month. The project was to assessed if sentiment analysis could play a pivotal role in forecasting stock activity.')
 
 with hypothesis: 
     st.header('Hypothesis')
@@ -89,7 +89,6 @@ with apple_inc:
 
 with jp_morgan: 
     st.header('JP Morgan')
-    st.write('Media feeds collected from NewsAPI for the previous 30-days.')
 
     st.subheader('Trade volumes over a 30-day period')
     # Read CSV files and prepare DF
@@ -128,9 +127,11 @@ with jp_morgan:
     # Display line chart of the count and mean sentiment
     st.line_chart(AMJ_news_df_grp)
 
+    st.subheader('Summary of analysis: JP Morgan')
+    st.write('There was no correlation in trading volumes and the newsfeed sentiments for JP Morgan. While there was an increase in count on 14 June 2022, which was the highest for the 30-day period, there were minimal sentiment changes. The most significant sentiment change during this period occurred 29 June 2022, where trade volume and value increased with the highest negative sentiment score.')
+
 with jll: 
     st.header('Jones Lang Lasalle')
-    st.write('Media feeds collected from NewsAPI for the previous 30-days.')
 
     st.subheader('Trade volumes over a 30-day period')
     # Read CSV files and prepare DF
@@ -168,6 +169,13 @@ with jll:
 
     # Display line chart of the count and mean sentiment
     st.line_chart(JLL_news_df_grp)
+
+    st.subheader('Summary of analysis: Jones Lang Lasalle')
+    st.write('There was some correlation in trading volumes and the newsfeed sentiments for Jones Lang Lasalle. For the highest count that occurred on 30 June 2022, there was a significant volume of trade and a drop in value. This was the strongest correlation for sentiment vs impact on markets. However, the largest drop in value for the period coincided with the highest positive sentiment for the period.')
+    
+with conclusion: 
+    st.header('Conclusion')
+    st.write('The short window for analysis provided a small window into the impact sentiment analysis has on the movement of blue-chip stocks in the market. However, it is unfair to assume that there is no correlation to some of the major moves in the market due to sentiment. Research has indicated that investor behaviours are a critical driver in market movement and while it is hard to identify the changes in market due to a single media feed, it provides an excellent tool to flag any potential market movement.')
 
 
 
